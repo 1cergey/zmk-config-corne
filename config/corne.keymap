@@ -29,28 +29,33 @@
         };
 
         l_bracket {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp LEFT_BRACE>;
             key-positions = <16 17>;
         };
 
         r_bracket {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <18 19>;
         };
 
         l_brace {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <28 29>;
         };
 
         r_brace {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <30 31>;
         };
 
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <19 20>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <15 16>;
         };
     };
 
@@ -109,10 +114,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB           &kp N1  &kp N2  &kp N3        &kp N4  &kp N5       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp F17
-&kp LEFT_CONTROL  &trans  &trans  &trans        &trans  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &kp DOUBLE_QUOTES
-&kp LSHFT         &trans  &trans  &trans        &trans  &trans       &trans    &trans    &trans    &trans     &trans  &kp F18
-                                  &kp LEFT_GUI  &trans  &kp SPACE    &kp RET   &trans    &kp RALT
+&kp TAB           &kp N1  &kp N2  &kp N3        &kp N4  &kp N5       &kp N6    &kp N7         &kp N8    &kp N9     &kp N0  &kp F17
+&kp LEFT_CONTROL  &trans  &trans  &trans        &trans  &trans       &kp LEFT  &kp DOWN       &kp UP    &kp RIGHT  &trans  &kp DOUBLE_QUOTES
+&kp LSHFT         &trans  &trans  &trans        &trans  &trans       &trans    &trans         &trans    &trans     &trans  &kp F18
+                                  &kp LEFT_GUI  &trans  &kp SPACE    &kp RET   &kp BACKSPACE  &kp RALT
             >;
         };
 
